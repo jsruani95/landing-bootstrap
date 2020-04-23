@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP LANDING</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1e35f1c2d7.js" crossorigin="anonymous"></script>
+    <style>
+        .navbar{
+    box-shadow: 2px 2px 5px #000;
+    opacity: .9;
+}
+
+.navbar .nav-item .nav-link{
+    color: black;
+}
+
+.main-header{
+    /* position: relative; */
+    background: url('https://s1.1zoom.me/b4554/582/Egypt_Desert_Sky_511464_1920x1080.jpg');
+    background-size: cover;
+    min-height: 200px;
+}
+
+.background-overlay{
+    /* position: absolute; */
+    background: rgba(180, 103, 8, 0.815);
+    top: 0;
+    left: 0;
+/*     width: 100%;
+    height: 100%; */
+}
+
+.form-control, .btn{
+    border-radius: 5px;
+}
+
+.team{
+    background: rgb(180, 103, 8);
+}
+
+.card-img-top{
+    width: 100%;
+    height: 30%;
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-ankh fa-2x" style="color: rgb(252, 213, 85);"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link text-white mr-4" href="#">Conoce Egipto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white mr-4" href="#">Nuestro Equipo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white mr-4" href="#">Contactanos</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--HEADER-->
+    <header class="main-header">
+        <div class="background-overlay text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 text-center justify-content-center align-self-center">
+                        <h1>EGIPTO, un ambicioso proyecto de National Geographic</h1>
+                        <p class="mt-5">Egipto contiene el relato de la vida de los faraones desde el Reino Antiguo hasta el Egipto ptolemaico, con una visión global y ordenada de los más de 3.000 años de historia de la civilización del Nilo y con explicaciones amenas y precisas, a más de numerosas ilustraciones, mapas temáticos, infografías y esquemas, para que el lector se adentre con placer en este apasionante tema.</p>
+                        <a href="https://www.amazon.es/antiguo-Egipto-GRANDES-OBRAS-ILUSTR/dp/8482986058" target="_blank" class="btn btn-light btn-lg text-dark mt-5">Ver más</a>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51MamsUN0CL._SX258_BO1,204,203,200_.jpg" alt="El Ultimo Caton" class="img-fluid d-none d-sm-block" style="width: 100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--NEWSLETTER-->
+    <section class="bg-light text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col md-4">
+                    <input type="text" class="form-control form-control-lg" placeholder="Ingresa tu nombre"> 
+                </div>
+                <div class="col md-4">
+                    <input type="email" class="form-control form-control-lg" placeholder="Ingresa tu email"> 
+                </div>
+                <div class="col md-4">
+                    <button class="btn btn-outline text-white btn-lg btn-block" style="background-color: rgb(180, 103, 8);">
+                        Suscribirme
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FEATURES-->
+    <section class="py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100 mx-3">
+                        <img src="https://historia.nationalgeographic.com.es/medio/2013/01/15/album_akg868124_2000x1303.jpg" class="card-img-top" alt="Tumba Tutankamon">
+                        <div class="card-body d-flex flex-column">
+                          <h5 class="card-title">Tumba de Tutankamón</h5>
+                          <p class="card-text text-justify">Fue descubierta en 1922 por Howard Carter bajo los restos de las viviendas de los trabajadores de la época ramésida, lo que la salvó de los saqueos de ese periodo. Como dato curioso, Carter consiguió fotografiar algunas ofrendas florales que se desintegraron al tocarlas.</p>
+                          <a href="https://es.wikipedia.org/wiki/KV62" class="btn btn-outline text-white btn-block mt-auto" target="_blank" style="background-color: rgb(180, 103, 8);">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 mx-3">
+                        <img src="https://www.babelviajes.com.ar/usr/images/12368_esfinge.jpg" class="card-img-top" alt="Gran Esfinge de Guiza">
+                        <div class="card-body d-flex flex-column">
+                          <h5 class="card-title">Gran Esfinge de Guiza</h5>
+                          <p class="card-text text-justify">La Gran Esfinge de Guiza es una monumental escultura que se encuentra en la ribera occidental del río Nilo, en la ciudad de Guiza, unos veinte kilómetros al suroeste del centro de El Cairo. Los egiptólogos estiman que fue esculpida c. siglo XXVI a. C., formando parte del complejo funerario del rey, durante la dinastía IV de Egipto.</p>
+                          <a href="https://es.wikipedia.org/wiki/Gran_Esfinge_de_Guiza" class="btn btn-outline text-white btn-block mt-auto" target="_blank" style="background-color: rgb(180, 103, 8);">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 mx-3">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/All_Gizah_Pyramids-2.jpg" class="card-img-top" alt="Necrópolis de Guiza">
+                        <div class="card-body d-flex flex-column">
+                          <h5 class="card-title">Necrópolis de Guiza</h5>
+                          <p class="card-text text-justify">La Necrópolis de Guiza se encuentra en la meseta de Guiza, al oeste de la población homónima, a unos veinte kilómetros de El Cairo, Egipto. Comenzó a utilizarse durante la segunda dinastía, habiéndose encontrado cerámica fechada en el reinado de Nynecher. En ella se encuentran las famosas pirámides construidas por los faraones de la cuarta dinastía Keops, Kefrén y Micerino.</p>
+                          <a href="https://es.wikipedia.org/wiki/Necr%C3%B3polis_de_Guiza" class="btn btn-outline text-white btn-block mt-auto" target="_blank" style="background-color: rgb(180, 103, 8);">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--WHY THIS PRODUCT-->
+    <section class="bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="m-5 ">
+                    <h3>Sobre Egipto</h3>
+                    <p class="mt-4">Egipto es un país soberano de África en la parte más occidental del Máshrek. Es un país transcontinental, está ubicado mayoritariamente en el extremo noreste de África mientras que en Asia, se encuentra en la península del Sinaí. Limita con Sudán al sur, con Libia al oeste y con el Estado de Palestina e Israel al noreste. Al norte limita con el mar Mediterráneo y al sureste con el mar Rojo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FAQ-->
+    <section class="container text-center p-5" >
+        <div class="row">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header bg-dark" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Geografía
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Egipto se encuentra en el extremo noreste del continente africano, posee costas sobre el mar Mediterráneo y el mar Rojo. Limita al oeste con Libia, al sur con Sudán, al norte con el Mediterráneo y al este con el mar Rojo e Israel. Su territorio abarca 1 001 450 km² de superficie, que a efectos comparativos corresponde a la mitad de la de México o el doble que España. Está ocupado en su inmensa mayoría por el desierto del Sáhara, y surcado por un único río, el Nilo, que riega la única tierra fértil del país y que ha sido la principal fuente de riqueza y ha permitido el desarrollo de varias culturas a lo largo de la milenaria historia de Egipto. Desemboca en el Mediterráneo formando un delta de unos 200 km de extensión en dirección norte-sur y entre Alejandría y Damieta en dirección este-oeste.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header bg-dark" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Historia
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        La historia del Antiguo Egipto se divide en tres imperios con períodos intermedios de conflictos internos y dominación por gobernantes extranjeros. El Imperio Antiguo se caracterizó por el florecimiento de las artes y la construcción de inmensas pirámides. Durante el Imperio Medio (2050-1800 a. C.), tras una etapa de descentralización, Egipto conoció un período de esplendor en su economía. En el Imperio Nuevo (1567-1085 a. C.) la monarquía egipcia alcanzó su edad dorada conquistando a los pueblos vecinos y expandiendo sus dominios bajo la dirección de los faraones de la dinastía XVIII. La última dinastía fue derrocada por los persas en el año 341 a. C., quienes a su vez fueron sustituidos por gobernantes griegos y romanos, periodo que comenzó hacia el año 30 a. C. como resultado de la derrota de Cleopatra y Marco Antonio en la batalla de Actium, que trajo siete siglos de paz relativa y estabilidad económica. Desde mediados del siglo IV, Egipto formó parte del Imperio Oriental, que se convirtió en el Imperio bizantino.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header bg-dark" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Cultura
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Los egipcios construyeron monumentos y complejos funerarios para sus faraones y grandes templos, con obeliscos en los cuales grabaron los títulos y alabanzas del faraón, con pinturas representando la vida divina o terrenal de este. También esculpieron grandes estatuas pétreas representando a dioses y faraones, y pequeñas piezas de orfebrería, con metales y piedras preciosas, y labores de artesanía realizadas en piedra, fayenza o delicadamente talladas en madera. Desarrollaron su propio sistema de escritura, los jeroglíficos, con sus variantes: la escritura hierática y posteriormente la demótica, simplificando su grafía. El egipcio fue de los primeros pueblos en entrar en la Historia, dejando a la posteridad tratados de medicina, matemáticas y relatos mitológicos e históricos, escritos en papiros o grabados en piedra o madera.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <!--TEAM-->
+    <section class="team text-center">
+        <div class="container p-5">
+            <h1 class="text-white">Nuestro Equipo</h1>
+            <p class="text-white">Quiénes son nuestros famosos egiptólogos?</p>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Hawass.jpg" alt="" class="img-fluid rounded-circle w-50">
+                            <h3 class="py-3">Zahi Hawass</h3>
+                            <p>Universidad de Pensilvania, 1987</p>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="p-3">
+                                <a href="https://www.facebook.com/pages/category/Public-Figure/Dr-Zahi-Hawass-112384738789408/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-facebook-square fa-lg" style="color: rgb(180, 103, 8);"></i>
+                                </a>
+                            </div>
+                            <div class="p-3">
+                                <a href="https://www.instagram.com/zahi_hawass/?hl=es" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-instagram-square fa-lg" style="color: rgb(180, 103, 8);"></i>
+                                </a>
+                            </div>
+                            <div class="p-3">
+                                <a href="https://www.linkedin.com/in/dr-zahi-hawass-%D8%B2%D8%A7%D9%87%D9%8A-%D8%AD%D9%88%D8%A7%D8%B3%E2%80%8E-9417a4116/?originalSubdomain=eg" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-linkedin fa-lg" style="color: rgb(180, 103, 8);"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <img src="https://thesohoagency.co.uk/public/assets/uploads/client/thumb/Joann_Fletcher.jpg" alt="" class="img-fluid rounded-circle w-50">
+                            <h3 class="py-3">Joann Fletcher</h3>
+                            <p>Universidad de Mánchester, 1989.</p>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="p-4">
+                                <a href="https://www.facebook.com/drjoannfletcher/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-facebook-square fa-lg" style="color: rgb(180, 103, 8);"></i>
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-instagram-square fa-lg" style="color: rgb(180, 103, 8);"></i>
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-linkedin fa-lg" style="color: rgb(180, 103, 8);"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <img src="https://iili.io/JCUg6u.jpg" alt="" class="img-fluid rounded-circle w-50">
+                            <h3 class="py-3">Julieta Sponton</h3>
+                            <p>Universidad Nacional de Córdoba, 2020</p>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="p-4">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-facebook-square fa-lg" style="color: rgb(180, 103, 8);"></i>
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-instagram-square fa-lg" style="color: rgb(180, 103, 8);"></i>
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-linkedin fa-lg" style="color: rgb(180, 103, 8);"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <img src="https://tantor-site-assets.s3.amazonaws.com/images/authors/Wilkinson_Toby.jpg" alt="" class="img-fluid rounded-circle w-50">
+                            <h3 class="py-3">Toby Wilkinson</h3>
+                            <p>Universidad de Cambridge, 20011</p>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="p-4">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-facebook-square fa-lg" style="color: rgb(180, 103, 8);"></i>
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-instagram-square fa-lg" style="color: rgb(180, 103, 8);"></i>
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-linkedin fa-lg" style="color: rgb(180, 103, 8);"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CONTACT-->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h3>Contactanos</h3>
+                    <p>Si tienes alguna duda o deseas formar parte de nuestro gran equipo.</p>
+                    <form action="">
+                        <div class="input-group mb-3 alig">
+                            <div class="input-group-prepend">
+                                <i class="fas fa-user input-group-text py-2"></i>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <i class="fas fa-envelope input-group-text py-2"></i>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <i class="fas fa-pen input-group-text py-2"></i>
+                            </div>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje" class="form-control"></textarea>
+                        </div>
+                        <button class="btn btn-outline btn-lg btn-block text-white" style="background-color: rgb(180, 103, 8);">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-3">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
